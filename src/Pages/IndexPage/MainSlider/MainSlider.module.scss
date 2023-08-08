@@ -1,0 +1,18 @@
+.topSlider {
+  margin-top: 15px;
+
+  .topSliderContent {
+    display: flex;
+
+    .topSliderItem {
+      display: flex;
+      justify-content: center;
+      //width: 100vw;
+
+      .topSliderItemImage {
+        width: 90vw;
+        //height: 440px;
+      }
+    }
+  }
+}

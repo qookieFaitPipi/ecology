@@ -1,0 +1,50 @@
+@import './../../../index.scss';
+
+.footer {
+  border-top: 1px #f2f2f2 solid;
+  margin-top: 15px;
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+    .footerMainBlock {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      .footerContacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footerContactsTitle {
+          font-weight: 600;
+          font-size: 24px;
+        }
+        .footerContactsText {
+          font-size: 20px;
+          margin-top: 10px;
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+
+    .footerBottomBlock {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 45px;
+      width: 100%;
+
+      .footerLogo {
+        width: 182px;
+        height: 70px;
+      }
+    }
+  }
+}
