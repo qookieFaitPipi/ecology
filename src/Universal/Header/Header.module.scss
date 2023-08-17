@@ -1,0 +1,54 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.04);
+  padding: 20px;
+  border-bottom: 1px #f2f2f2 solid;
+  border-top: 1px #f2f2f2 solid;
+
+  .headerContent {
+    display: flex;
+    justify-content: space-around;
+
+    .headerLogoBlock {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+
+      .headerLogo {
+        width: 182px;
+        height: 70px;
+      }
+      .headerTitleBlock {
+        display: flex;
+        align-items: center;
+
+        .headerTitle {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 18px;
+          margin-left: 10px;
+        }
+      }
+
+      .headerSupTitle {
+        font-weight: 500;
+        color: #808080;
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+    .headerNavBlock {
+      display: flex;
+      align-items: center;
+
+      .headerNavItem {
+        font-size: 19px;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 530;
+
+      }
+    }
+  }
+}

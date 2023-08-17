@@ -1,22 +1,30 @@
 import React from 'react'
 
-// pages
-import Header from './Header/Header';
-import MainSlider from './MainSlider/MainSlider';
+// components
+import Header from '../../Universal/Header/Header';
+import Logo from './Logo/Logo';
 import About from './About/About';
+import Tools from './Tools/Tools';
 import News from './News/News';
 import Founders from './Founders/Founders';
-import Footer from './Footer/Footer';
+import Footer from '../../Universal/Footer/Footer';
+
+// modals
+import DetailsModal from '../Modals/DetailsModal/DetailsModal';
 
 const IndexPage = () => {
   return (
     <section>
       <Header />
-      <MainSlider />
+      <Logo />
       <About />
+      <Tools />
       <News />
       <Founders />
       <Footer />
+
+      // modals
+      <DetailsModal />
     </section>
   )
 }

@@ -5,14 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Helios';
-
 }
 
 @font-face {
   font-family: 'Helios';
-  src: url(/Assets/fonts/Helios/helios.otf) format('otf');
-  font-weight: 700;
+  src: url(/Assets/fonts/helios/HeliosC-Bold.ttf);
+  font-weight: 500;
+  max-width: 1400px;
 }
 
 // title

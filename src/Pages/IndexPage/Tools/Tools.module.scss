@@ -1,0 +1,79 @@
+@import './../../../index.scss';
+
+.tools {
+  margin-top: 15px;
+  border-bottom: 1px #ebebeb solid;
+
+  .toolsTitleBlock {
+    display: flex;
+    justify-content: center;
+    
+    .toolsTitle {
+      margin-top: 20px;
+      font-size: $sizeTitle;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+
+  .toolsContent {
+    display: flex;
+    margin-bottom: 40px;
+
+    .toolsItem {
+      display: flex;
+      justify-content: end;
+      align-items: start;
+      flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 70%;
+      height: 600px;
+      margin: 0 auto;
+      border-radius: 60px;
+      background-blend-mode: multiply;
+      background-color: #a3a3a3;
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.03);
+      background-position: center;
+      
+      .toolsTitleBlock {
+
+        .toolTitle {
+          color: #fff;
+          font-weight: 700;
+          font-size: 30px;
+          margin-left: 30px;
+        }
+      }
+
+      .toolsTextBlock {
+        max-width: 50%;
+
+        .toolsText {
+          text-align: start;
+          color: #fff;
+          font-weight: 500;
+          font-size: 20px;
+          margin-top: 10px;
+          margin-left: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .toolsInputBlock {
+        background-color: #47A76A;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+
+        .toolsInput {
+          color: #fff;
+          font-weight: 700;
+          font-size: 18px;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
