@@ -2,6 +2,7 @@ import React from 'react'
 
 // components
 import Header from '../../Universal/Header/Header';
+import HiddenHeader from '../../Universal/HiddenHeader/HiddenHeader';
 import Logo from './Logo/Logo';
 import About from './About/About';
 import Tools from './Tools/Tools';
@@ -16,6 +17,7 @@ const IndexPage = () => {
   return (
     <section>
       <Header />
+      <HiddenHeader />
       <Logo />
       <About />
       <Tools />
@@ -23,7 +25,6 @@ const IndexPage = () => {
       <Founders />
       <Footer />
 
-      // modals
       <DetailsModal />
     </section>
   )

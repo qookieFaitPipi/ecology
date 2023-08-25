@@ -16,10 +16,11 @@ const Header = () => {
           <div className={styles.headerSupTitle}>Оберегаем окружающую среду в каждом проекте</div>
         </div>
         <div className={styles.headerNavBlock}>
-          <div className={styles.headerNavItem}>О компании</div>
-          <div className={styles.headerNavItem}>Наши новости</div>
-          <div className={styles.headerNavItem}>Руководство</div>
-          <div className={styles.headerNavItem}>Контакты</div>
+          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 350, behavior: 'smooth'})}>О компании</div>
+          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 800, behavior: 'smooth'})}>Виды работ</div>
+          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 1450, behavior: 'smooth'})}>Новости</div>
+          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 1850, behavior: 'smooth'})}>Руководство</div>
+          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 2000, behavior: 'smooth'})}>Контакты</div>
         </div>
       </div>
     </div>

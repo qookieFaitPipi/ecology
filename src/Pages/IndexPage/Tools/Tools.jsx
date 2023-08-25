@@ -7,7 +7,6 @@ import "react-multi-carousel/lib/styles.css";
 
 // images
 import cr3 from './../../../Assets/images/carousel/cr3.jpg';
-import full from './../../../Assets/images/carousel/fullpage.jpg';
 
 // redux
 import { useDispatch } from 'react-redux';
