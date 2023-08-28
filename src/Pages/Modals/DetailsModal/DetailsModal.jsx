@@ -4,7 +4,7 @@ import styles from './DetailsModal.module.scss';
 // redux
 import { useSelector } from "react-redux";
 import { useDispatch } from 'react-redux';
-import { setDetailsModalState } from '../../../redux/slices/detailSlice';
+import { setDetailsModalState } from '../../../Redux/slices/detailSlice';
 
 const DetailsModal = () => {
   const {detailsModalState, title, topText, bottomText, points} = useSelector((state) => state.detailSlice)

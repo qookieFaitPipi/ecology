@@ -11,7 +11,7 @@ const Header = () => {
         <div className={styles.headerLogoBlock}>
           <div className={styles.headerTitleBlock}>
             <img className={styles.headerLogo} src={logo} alt='logo'/>
-            <div className={styles.headerTitle}>АКЦИОНЕРНОЕ ОБЩЕСТВО <br /> "ЭКОЛОГИЯ СТРОИТЕЛЬСТВА <br /> И ПРОИЗВОДСТВА"</div>
+            <div className={styles.headerTitle}>АКЦИОНЕРНОЕ ОБЩЕСТВО <br /> «ЭКОЛОГИЯ СТРОИТЕЛЬСТВА <br /> И ПРОИЗВОДСТВА»</div>
           </div>
           <div className={styles.headerSupTitle}>Оберегаем окружающую среду в каждом проекте</div>
         </div>

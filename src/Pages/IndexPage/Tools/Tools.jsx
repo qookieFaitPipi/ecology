@@ -8,9 +8,15 @@ import "react-multi-carousel/lib/styles.css";
 // images
 import cr3 from './../../../Assets/images/carousel/cr3.jpg';
 
+import tl1 from './../../../Assets/images/tools/tl1.jpg';
+import tl2 from './../../../Assets/images/tools/tl2.jpg';
+import tl3 from './../../../Assets/images/tools/tl3.jpg';
+import tl4 from './../../../Assets/images/tools/tl4.jpg';
+import tl5 from './../../../Assets/images/tools/tl5.jpg';
+
 // redux
 import { useDispatch } from 'react-redux';
-import { setDetailsModalState } from '../../../redux/slices/detailSlice';
+import { setDetailsModalState } from '../../../Redux/slices/detailSlice';
 
 const Tools = () => {
   const dispatch = useDispatch();
@@ -41,7 +47,7 @@ const Tools = () => {
       </div>
       <Carousel responsive={responsive} className={styles.toolsContent}>
 
-        <div className={styles.toolsItem} style={{backgroundImage: `url(${cr3})`}}>
+        <div className={styles.toolsItem} style={{backgroundImage: `url(${tl1})`}}>
           <div className={styles.toolsTitleBlock}>
             <div className={styles.toolTitle}>Предпроектная документация</div>
           </div>
@@ -53,7 +59,7 @@ const Tools = () => {
           </div>
         </div>
 
-        <div className={styles.toolsItem} style={{backgroundImage: `url(${cr3})`}}>
+        <div className={styles.toolsItem} style={{backgroundImage: `url(${tl2})`}}>
           <div className={styles.toolsTitleBlock}>
             <div className={styles.toolTitle}>Инженерные изыскания</div>
           </div>
@@ -65,7 +71,7 @@ const Tools = () => {
           </div>
         </div>
 
-        <div className={styles.toolsItem} style={{backgroundImage: `url(${cr3})`}}>
+        <div className={styles.toolsItem} style={{backgroundImage: `url(${tl3})`}}>
           <div className={styles.toolsTitleBlock}>
             <div className={styles.toolTitle}>Проектные работы</div>
           </div>
@@ -77,7 +83,7 @@ const Tools = () => {
           </div>
         </div>
 
-        <div className={styles.toolsItem} style={{backgroundImage: `url(${cr3})`}}>
+        <div className={styles.toolsItem} style={{backgroundImage: `url(${tl4})`}}>
           <div className={styles.toolsTitleBlock}>
             <div className={styles.toolTitle}>Проекты рекультивации нарушенных земель</div>
           </div>
@@ -89,7 +95,7 @@ const Tools = () => {
           </div>
         </div>
 
-        <div className={styles.toolsItem} style={{backgroundImage: `url(${cr3})`}}>
+        <div className={styles.toolsItem} style={{backgroundImage: `url(${tl5})`}}>
           <div className={styles.toolsTitleBlock}>
             <div className={styles.toolTitle}>Экспертизы и согласования</div>
           </div>
