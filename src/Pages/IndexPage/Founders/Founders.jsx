@@ -16,7 +16,7 @@ const Founders = () => {
         <div className={styles.foundersItem}>
           <div className={styles.foundersItemImageBlock}>
             <img className={styles.foundersItemImage} src={fd1} alt="founder" />
-            <div className={styles.foundersItemTitle}>Директор по инженерной экологии</div>
+            <div className={styles.foundersItemTitle}>Генеральный директор</div>
           </div>
           <div className={styles.foundersItemTextBlock}>
             <div className={styles.foundersItemName}>Савченко Андрей Владимирович</div>

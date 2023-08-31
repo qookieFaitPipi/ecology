@@ -2,7 +2,9 @@ import React from 'react';
 import styles from './Footer.module.scss';
 
 // images
-import logo from './../../Assets/images/logo.jpg';
+import logo from './../../Assets/images/logoZnak.png';
+import logo2 from './../../Assets/images/logoZnak2.png';
+
 
 // files
 import fl1 from './../../Assets/files/fl1.pdf';

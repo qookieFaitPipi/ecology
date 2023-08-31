@@ -8,6 +8,7 @@ import About from './About/About';
 import Tools from './Tools/Tools';
 import News from './News/News';
 import Founders from './Founders/Founders';
+import Partners from './Partners/Partners';
 import Footer from '../../Universal/Footer/Footer';
 
 // modals
@@ -23,6 +24,7 @@ const IndexPage = () => {
       <Tools />
       <News />
       <Founders />
+      <Partners />
       <Footer />
 
       <DetailsModal />

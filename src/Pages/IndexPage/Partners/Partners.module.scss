@@ -1,0 +1,35 @@
+@import './../../../index.scss';
+
+.partnersTitle {
+  text-align: center;
+  font-size: $sizeTitle;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.partners {
+  display: flex;
+  margin-top: 40px;
+
+  .partnersItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    pointer-events: none;
+    user-select: none;
+
+    .partnersItemText {
+      font-size: 12px;
+    }
+    .partnersItemTextH {
+      font-family: 'Sacramento', cursive;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
