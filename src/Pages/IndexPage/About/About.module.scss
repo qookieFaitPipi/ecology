@@ -3,25 +3,25 @@
 .about {
   margin-top: 15px;
   border-top: 1px #ebebeb solid;
-  border-bottom: 1px #ebebeb solid;
+
+  .aboutTitle {
+    text-align: center;
+    font-size: $sizeTitle;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 
   .aboutContent {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .aboutTitle {
-      margin-top: 30px;
-      font-size: $sizeTitle;
-      font-weight: 600;
-    }
-
     .aboutText {
-      font-size: 18px;
-      text-align: center;
-      max-width: 700px;
-      margin-bottom: 40px;
-      margin-top: 20px;
+      font-size: sizeText;
+      text-align: justify;
+      max-width: 1200px;
+      color: #000;
     }
   }
 }

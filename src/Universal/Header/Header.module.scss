@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .header {
   position: fixed;
   width: 100%;
@@ -12,6 +14,7 @@
   .headerContent {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     .headerLogoBlock {
       display: flex;
@@ -20,25 +23,14 @@
       justify-content: center;
 
       .headerLogo {
-        width: 182px;
-        height: 70px;
-      }
-      .headerTitleBlock {
-        display: flex;
-        align-items: center;
-
-        .headerTitle {
-          font-weight: 700;
-          font-size: 20px;
-          line-height: 18px;
-          margin-left: 10px;
-        }
+        width: 500px;
+        height: 80px;
       }
 
       .headerSupTitle {
         font-weight: 500;
         color: #808080;
-        font-size: 16px;
+        font-size: sizeSupText;
         margin-top: 5px;
       }
     }
@@ -47,11 +39,9 @@
       align-items: center;
 
       .headerNavItem {
-        font-size: 19px;
+        font-size: 18px;
         margin-right: 20px;
         cursor: pointer;
-        font-weight: 530;
-
       }
     }
   }

@@ -10,14 +10,14 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.headerContent}>
         <div className={styles.headerLogoBlock}>
-          <img style={{width: '500px', height: '80px'}} src={logo2} alt="" />
+          <img className={styles.headerLogo} src={logo2} alt="" />
           <div className={styles.headerSupTitle}>Оберегаем окружающую среду в каждом проекте</div>
         </div>
         <div className={styles.headerNavBlock}>
-          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 350, behavior: 'smooth'})}>О компании</div>
-          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 800, behavior: 'smooth'})}>Виды работ</div>
-          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 1450, behavior: 'smooth'})}>Новости</div>
-          <div className={styles.headerNavItem} onClick={() => window.scroll({top: 2000, behavior: 'smooth'})}>Контакты</div>
+          <div className={styles.headerNavItem} onClick={() => window.scrollTo({ top: document.getElementById('scrollAbout').offsetTop - 130, behavior: 'smooth'})}>О компании</div>
+          <div className={styles.headerNavItem} onClick={() => window.scrollTo({ top: document.getElementById('scrollTools').offsetTop - 130, behavior: 'smooth'})}>Виды работ</div>
+          <div className={styles.headerNavItem} onClick={() => window.scrollTo({ top: document.getElementById('scrollNews').offsetTop - 130, behavior: 'smooth'})}>Новости</div>
+          <div className={styles.headerNavItem} onClick={() => window.scrollTo({ top: document.getElementById('scrollFooter').offsetTop - 130, behavior: 'smooth'})}>Контакты</div>
         </div>
       </div>
     </div>

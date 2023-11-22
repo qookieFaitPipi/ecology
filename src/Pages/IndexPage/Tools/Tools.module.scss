@@ -2,78 +2,75 @@
 
 .tools {
   margin-top: 15px;
-  border-bottom: 1px #ebebeb solid;
+  border-top: 1px #ebebeb solid;
 
-  .toolsTitleBlock {
-    display: flex;
-    justify-content: center;
-    
-    .toolsTitle {
-      margin-top: 20px;
-      font-size: $sizeTitle;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
+  .toolsTitle {
+    text-align: center;
+    font-size: $sizeTitle;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
 
   .toolsContent {
     display: flex;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .toolsItem {
+      position: relative;
       display: flex;
-      justify-content: end;
-      align-items: start;
       flex-direction: column;
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 70%;
-      height: 600px;
-      margin: 0 auto;
-      border-radius: 60px;
-      background-blend-mode: multiply;
-      background-color: #a3a3a3;
-      box-shadow: 0px 10px 20px rgba(0,0,0,0.03);
-      background-position: center;
-      
-      .toolsTitleBlock {
+      width: 500px;
+      margin: 0px 40px 40px 40px;
+      border: 1px #ccc solid;
+      border-radius: 10px;
 
-        .toolTitle {
-          color: #fff;
-          font-weight: 700;
-          font-size: 30px;
-          margin-left: 30px;
-        }
+      .toolsItemTitle {
+        border-bottom: 1px #ccc solid;
+        padding-bottom: 5px;
+        font-size: 22px;
+        padding: 10px;
+        text-align: center;
+        color: #000;
+        background-color: #d4e9c2;
+        border-radius: 10px 10px 0px 0px;
+        font-weight: 600;
       }
 
-      .toolsTextBlock {
-        max-width: 50%;
-
-        .toolsText {
-          text-align: start;
-          color: #fff;
-          font-weight: 500;
-          font-size: 20px;
-          margin-top: 10px;
-          margin-left: 30px;
-          margin-bottom: 20px;
-        }
+      .toolsItemDescription {
+        margin-top: 10px;
+        font-size: sizeText;
+        padding: 10px;
+        margin-bottom: 50px;
       }
 
-      .toolsInputBlock {
-        background-color: #47A76A;
-        margin-left: 30px;
-        margin-bottom: 40px;
-        border-radius: 10px;
+      .toolsItemInputBlock {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        bottom: 0;
+        left: 0;
+        width: 500px;
+        height: 40px;
+        border-radius: 0px 0px 10px 10px;
+        border-top: 1px #ccc solid;
+        cursor: pointer;
 
-        .toolsInput {
-          color: #fff;
-          font-weight: 700;
-          font-size: 18px;
-          padding: 10px;
-          cursor: pointer;
+        .toolsItemInput {
+          border-radius: 10px;
+          color: #000;
         }
       }
+      .toolsItemInputBlock:hover {
+        background-color: #d4e9c2;
+      }
+    }
+
+    .toolsItem:last-child {
+      margin: 0px 40px 0px 40px;
     }
   }
 }

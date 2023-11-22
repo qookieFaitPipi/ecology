@@ -3,18 +3,19 @@
 .footer {
   border-top: 1px #f2f2f2 solid;
   margin-top: 35px;
+  background-color: #efefef;
 
   .footerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
 
     .footerMainBlock {
       display: flex;
       justify-content: space-around;
-      width: 100%;
+      width: 70%;
 
       .footerContacts {
         display: flex;
@@ -23,11 +24,11 @@
 
         .footerContactsTitle {
           font-weight: 600;
-          font-size: 24px;
+          font-size: 22px;
         }
         .footerContactsText {
-          font-size: 20px;
-          margin-top: 10px;
+          font-size: sizeText;
+          margin-top: 5px;
           text-decoration: none;
           color: #000;
           text-align: center;
@@ -39,13 +40,10 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-top: 45px;
+      margin-top: 15px;
       width: 100%;
-
-      .footerLogo {
-        width: 182px;
-        height: 70px;
-      }
+      margin-bottom: 10px;
+      font-size: sizeText;
     }
   }
 }

@@ -2,20 +2,18 @@
 
 .news {
   margin-top: 15px;
+  border-top: 1px #ebebeb solid;
 
-  .newsTitleBlock {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-
-    .newsTitle {
-      font-size: $sizeTitle;
-      font-weight: 600;
-    }
+  .newsTitle {
+    text-align: center;
+    font-size: $sizeTitle;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 25px;
   }
-
+  
   .newsContent {
-    
+    max-width: 1700px;
+    margin: 0 auto;
   }
 }

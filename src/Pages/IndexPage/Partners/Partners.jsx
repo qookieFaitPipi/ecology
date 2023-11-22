@@ -10,7 +10,6 @@ import pt1 from './../../../Assets/images/partners/pt1.png';
 import pt2 from './../../../Assets/images/partners/pt2.png';
 import pt3 from './../../../Assets/images/partners/pt3.png';
 import pt4 from './../../../Assets/images/partners/pt4.jpg';
-
 import pt5 from './../../../Assets/images/partners/pt5.jpg';
 import pt6 from './../../../Assets/images/partners/pt6.png';
 
@@ -35,38 +34,40 @@ const Partners = () => {
   };
 
   return (
-    <>
+    <div className={styles.partners}>
       <div className={styles.partnersTitle} id='scrollPartners'>Наши заказчики и партнёры</div>
-      <Carousel responsive={responsive} className={styles.partners} id='scrollPartners'>
-
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="300px"  src={pt1} alt="" />
+      <Carousel responsive={responsive} className={styles.partnersCarousel} id='scrollPartners'>
+      
+      <div className={styles.partnersCarouselItem}>
+        <img width="250px" src={pt6} alt="ООО «ТрансКомИнжиниринг»" />
       </div>
 
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="300px"  src={pt2} alt="" />
+      <div className={styles.partnersCarouselItem}>
+        <img width="300px" src={pt3} alt="ООО «БАЛТМОР-проект»" />
       </div>
 
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="300px"  src={pt3} alt="" />
+      <div className={styles.partnersCarouselItem} style={{fontSize: '30px'}}>
+        <i>ООО «ТЭС и»</i>
       </div>
 
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="150px"  src={pt4} alt="" />
+      <div className={styles.partnersCarouselItem}>
+        <img className={styles.partnersItemImage} width="300px"  src={pt1} alt="ОАО «Ультрамар»" />
       </div>
 
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="150px" src={pt5} alt="" />
-        <div className={styles.partnersItemText}>ООО «ПСК «СИТИ-Инжиниринг»</div>
-
+      <div className={styles.partnersCarouselItem}>
+        <img width="300px"  src={pt2} alt="ОАО «Хотьковский автомост»" />
       </div>
 
-      <div className={styles.partnersItem}>
-        <img className={styles.partnersItemImage} width="250px" src={pt6} alt="" />
+      <div className={styles.partnersCarouselItem}>
+        <img width="150px" src={pt5} alt="ООО «ПСК «СИТИ-Инжиниринг»" />
+        <div className={styles.partnersCarouselItemText}>ООО «ПСК «СИТИ-Инжиниринг»</div>
       </div>
 
+      <div className={styles.partnersCarouselItem}>
+        <img width="150px"  src={pt4} alt="ООО «МТ групп»" />
+      </div>
       </Carousel>
-    </>
+    </div>
   )
 }
 

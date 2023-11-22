@@ -4,6 +4,7 @@
   background-color: rgba(52, 58, 64, 0.6);
   width: 100vw;
   height: 100vh;
+  z-index: 2;
 
   .detailsModalContent {
     display: flex;
@@ -13,7 +14,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 780px;
+    width: 840px;
     border-radius: 10px;
     border: 1px #fff solid;
     background-color: #fff;
@@ -23,7 +24,7 @@
     .detailsModalTitleBlock {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: end;
       border-bottom: 1px #ccc solid;
       padding-bottom: 10px;
 
