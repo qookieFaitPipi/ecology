@@ -1,21 +1,20 @@
 import React from 'react';
 import styles from './NewsItem.module.scss';
 
-// images
-import nw1 from './../../../../Assets/images/news/nw1.png';
+import nw2 from './../../../../Assets/images/news/nw2.png';
 
-const NewsItem = () => {
+const NewsItem = (props) => {
   return (
     <div className={styles.newsItem}>
-      <div className={styles.newsItemContent}>
+      <a className={styles.newsItemContent} href={props.index ? nw2 :props.img}>
         <div className={styles.newsItemImageBlock}>
-          <img className={styles.newsItemImage} src={nw1} alt="" />
+          <img className={styles.newsItemImage} src={props.img} alt="" />
         </div>
         <div className={styles.newsItemInfoBlock}>
-          <div className={styles.newsItemInfoDate}><i>09.09.2022</i></div>
-          <div className={styles.newsItemInfoText}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+          <div className={styles.newsItemInfoDate}><i>{props.date}</i></div>
+          <div className={styles.newsItemInfoText}>{props.text}</div>
         </div>
-      </div>
+      </a>
     </div>
   )
 }

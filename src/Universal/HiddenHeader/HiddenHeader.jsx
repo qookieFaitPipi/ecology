@@ -2,7 +2,7 @@ import React from 'react';
 
 const HiddenHeader = () => {
   return (
-    <div style={{height: '130px'}}>
+    <div style={{height: '120px'}}>
       
     </div>
   )

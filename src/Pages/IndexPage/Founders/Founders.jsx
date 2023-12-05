@@ -19,7 +19,6 @@ const Founders = () => {
         <div className={styles.foundersItem}>
           <div className={styles.foundersItemImageBlock}>
             <img className={styles.foundersItemImage} src={fd2} alt="founder" />
-            <div className={styles.foundersItemTitle}>Генеральный директор</div>
             <div className={styles.foundersItemLink} onClick={() => dispatch(setDetailsModalState({detailsModalState: true, type: 6}))}>Биография генерального директора АО «ЭСП»</div>
           </div>
           <div className={styles.foundersItemTextBlock}>

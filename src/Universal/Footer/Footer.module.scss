@@ -1,37 +1,39 @@
 @import './../../index.scss';
 
 .footer {
-  border-top: 1px #f2f2f2 solid;
   margin-top: 35px;
-  background-color: #efefef;
+  background-color: #f2f2f2;
+  border-top: 1px #f2f2f2 solid;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.13);
 
   .footerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 5px;
 
     .footerMainBlock {
       display: flex;
       justify-content: space-around;
       width: 70%;
+      margin-top: 10px;
 
       .footerContacts {
         display: flex;
         flex-direction: column;
-        align-items: center;
 
         .footerContactsTitle {
           font-weight: 600;
-          font-size: 22px;
+          font-size: 20px;
+          border-bottom: 1px #ccc solid;
+          padding-bottom: 5px;
         }
         .footerContactsText {
           font-size: sizeText;
           margin-top: 5px;
           text-decoration: none;
           color: #000;
-          text-align: center;
         }
       }
     }
@@ -40,10 +42,10 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-top: 15px;
+      margin-top: 5px;
       width: 100%;
-      margin-bottom: 10px;
-      font-size: sizeText;
+      margin-bottom: 5px;
+      font-size: 14px;
     }
   }
 }

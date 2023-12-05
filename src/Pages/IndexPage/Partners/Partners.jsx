@@ -43,19 +43,19 @@ const Partners = () => {
       </div>
 
       <div className={styles.partnersCarouselItem}>
-        <img width="300px" src={pt3} alt="ООО «БАЛТМОР-проект»" />
+        <img width="300px" style={{marginBottom: '20px'}} src={pt3} alt="ООО «БАЛТМОР-проект»" />
+      </div>
+
+      <div className={styles.partnersCarouselItem}>
+        <img className={styles.partnersItemImage} width="300px" style={{marginBottom: '50px'}}  src={pt1} alt="ОАО «Ультрамар»" />
       </div>
 
       <div className={styles.partnersCarouselItem} style={{fontSize: '30px'}}>
-        <i>ООО «ТЭС и»</i>
+        <i style={{marginBottom: '15px'}}>ООО «ТЭС И»</i>
       </div>
 
       <div className={styles.partnersCarouselItem}>
-        <img className={styles.partnersItemImage} width="300px"  src={pt1} alt="ОАО «Ультрамар»" />
-      </div>
-
-      <div className={styles.partnersCarouselItem}>
-        <img width="300px"  src={pt2} alt="ОАО «Хотьковский автомост»" />
+        <img width="300px" style={{marginBottom: '10px'}} src={pt2} alt="ОАО «Хотьковский автомост»" />
       </div>
 
       <div className={styles.partnersCarouselItem}>

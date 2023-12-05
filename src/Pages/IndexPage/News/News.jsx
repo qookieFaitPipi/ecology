@@ -8,6 +8,12 @@ import NewsItem from './NewsItem/NewsItem';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// images
+import nw1 from './../../../Assets/images/news/nw1.jpg';
+import nw2 from './../../../Assets/images/news/nw2.png';
+import test from './../../../Assets/images/news/test2.png';
+
+
 const News = () => {
   const responsive = {
     superLargeDesktop: {
@@ -32,9 +38,8 @@ const News = () => {
     <div className={styles.news}>
       <div className={styles.newsTitle} id='scrollNews'>Новости</div>
       <Carousel responsive={responsive} className={styles.newsContent}>
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
+        <NewsItem index={0} text={'Уважаемые коллеги, поздравляем вас с Днем проектировщика!\nМы желаем вам неисчерпаемого вдохновения, интересных проектов,\nуспешной реализации задуманного и благополучного завершения начатого!\nЗдоровья, творческих идей и благополучия!'} date={'16.11.2023'} img={nw1}/>
+        <NewsItem index={1} text={'АО «ЭСП» по заказу ООО «БАЛТМОР-проект» разработан раздел «Мероприятия по охране окружающей среды» проектной документации по объекту «Строительство железнодорожных путей необщего пользования ОАО «БСМЗ». Объект расположен в г.Санкт-Петербург, относится к объектам транспортной инфраструктуры, является линейным объектом и предназначен для обслуживания ОАО «БСМЗ». 01.08.2023 г. получено положительное заключение негосударственной экспертизы по объекту.'} date={'01.08.2023'} img={test}/>
       </Carousel>
     </div>
   )

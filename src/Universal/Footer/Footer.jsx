@@ -11,9 +11,9 @@ const Footer = () => {
         <div className={styles.footerMainBlock}>
           <div className={styles.footerContacts}>
             <div className={styles.footerContactsTitle} id='scrollFooter'>Контакты</div>
-            <div className={styles.footerContactsText}>196084, Россия, Санкт-Петербург, <br /> Малая Митрофаньевская улица, д.4, литер Л, офис 315</div>
-            <div className={styles.footerContactsText}>+7 (812) 948-55-99</div>
-            <div className={styles.footerContactsText}>info@eci.su</div>
+            <div className={styles.footerContactsText}><b>Адрес:</b> 196084, Россия, Санкт-Петербург, <br /> Малая Митрофаньевская улица, д.4, литер Л, офис 315</div>
+            <div className={styles.footerContactsText}><b>Телефон:</b> +7 (812) 948-55-99</div>
+            <div className={styles.footerContactsText}><b>Email:</b> info@eci.su</div>
           </div>
           <div className={styles.footerContacts}>
             <div className={styles.footerContactsTitle}>СОУТ</div>

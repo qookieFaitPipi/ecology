@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './Logo.module.scss';
 
 // images
-import bigLogo from './../../../Assets/images/bigLogo.svg';
-
 import big from './../../../Assets/images/big.png';
 
 const Logo = () => {
