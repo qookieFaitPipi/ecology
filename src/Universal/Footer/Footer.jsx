@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footerBottomBlock}>
-          ЭСП 2023 Все права защищены
+          AO «ЭСП» 2023 Все права защищены
         </div>
       </div>
     </div>
