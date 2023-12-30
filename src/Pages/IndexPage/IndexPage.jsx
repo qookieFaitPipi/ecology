@@ -3,7 +3,7 @@ import React from 'react'
 // components
 import Header from '../../Universal/Header/Header';
 import HiddenHeader from '../../Universal/HiddenHeader/HiddenHeader';
-import Logo from './Logo/Logo';
+import Bigpage from './Bigpage/Bigpage';
 import About from './About/About';
 import Tools from './Tools/Tools';
 import News from './News/News';
@@ -19,7 +19,7 @@ const IndexPage = () => {
     <section>
       <Header />
       <HiddenHeader />
-      <Logo />
+      <Bigpage />
       <About />
       <Tools />
       <News />

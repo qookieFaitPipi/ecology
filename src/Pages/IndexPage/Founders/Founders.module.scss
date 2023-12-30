@@ -1,77 +1,97 @@
 @import './../../../index.scss';
 
 .founders {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-top: 15px;
   border-top: 1px #ebebeb solid;
 
-  .foundersTitle {
+  .title {
     text-align: center;
     font-size: $sizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
-  .foundersContent {
+  .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    border: 1px #ebebeb solid;
+    width: 90%;
+    border-radius: 10px;
+    padding: 40px 0px 40px 0px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.03);
 
-    .foundersItem {
+    @media (max-width: 767px) {
+      flex-direction: column;
+      padding: 0px 0px 40px 0px;
+    }
+
+    .imageBlock {
       display: flex;
-      justify-content: space-around;
-      border: 1px #ebebeb solid;
-      width: 80%;
-      border-radius: 10px;
-      padding: 40px 0px 40px 0px;
-      box-shadow: 0px 10px 20px rgba(0,0,0,0.03);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      .foundersItemImageBlock {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      .image {
+        height: 559px;
+        width: 377px;
+        border-radius: 10px;
 
-        .foundersItemLink {
-          font-size: sizeText;
-          margin-top: 25px;
-          cursor: pointer;
-          color: #44944A;
-          /*color: #434B4D;*/
-          font-weight: 500;
-          text-decoration: underline;
+        @media (max-width: 767px) {
+          width: 100%;
+          height: auto;
         }
-
-        .foundersItemImage {
-          height: 559px;
-          width: 377px;
-          border-radius: 10px;
-        }
-
-
-        .foundersItemTitle {
-          text-align: center;
-          color: #808080;
-          font-size: sizeText;
-          margin-top: 5px;
-        }
-
       }
 
-      .foundersItemTextBlock {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
+      .link {
+        font-size: sizeText;
+        margin-top: 25px;
+        cursor: pointer;
+        color: #44944A;
+        font-weight: 500;
+        text-decoration: underline;
 
-        .foundersItemName {
-          font-size: 20px;
-          border-bottom: 1px #ebebeb solid;
-          padding-bottom: 5px;
+        @media (max-width: 767px) {
+          text-align: center;
         }
+      }
+    }
 
-        .foundersItemText {
-          font-size: 18px;
-          margin-top: 10px;
+    .textBlock {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      @media (max-width: 767px) {
+        align-content: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+
+      .name {
+        font-size: 20px;
+        border-bottom: 1px #ebebeb solid;
+        padding-bottom: 5px;
+
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      .text {
+        font-size: 18px;
+        margin-top: 10px;
+
+        @media (max-width: 767px) {
+          font-size: 14px;
         }
       }
     }

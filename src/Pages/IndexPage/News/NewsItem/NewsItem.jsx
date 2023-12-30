@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styles from './NewsItem.module.scss';
 
 import nw2 from './../../../../Assets/images/news/nw2.png';
+import nw3 from './../../../../Assets/images/news/nw3.png';
 
 const NewsItem = (props) => {
-
+  const [height, setHeight] = useState();
+  
   useEffect(() => {
     let elem = document.querySelectorAll('#newsItem');
 
@@ -15,20 +17,16 @@ const NewsItem = (props) => {
       }
     }
 
-    setHeight(res)
+    setHeight(res);
   }, []);
 
-  const [height, setHeight] = useState();
-
   return (
-    <div className={styles.newsItem} id='newsItem' style={{height: height}}>
-      <a className={styles.newsItemContent} href={props.index ? nw2 :props.img}>
-        <div className={styles.newsItemImageBlock}>
-          <img className={styles.newsItemImage} src={props.img} alt="" />
-        </div>
-        <div className={styles.newsItemInfoBlock}>
-          <div className={styles.newsItemInfoDate}><i>{props.date}</i></div>
-          <div className={styles.newsItemInfoText}>{props.text}</div>
+    <div className={styles.news} id='newsItem' style={{height: height}}>
+      <a className={styles.container} href={props.index === 1 ? nw2 : props.index === 2 ? nw3 : props.img}>
+        <img className={styles.newsImage} src={props.img} alt="news" />
+        <div className={styles.newsInfo}>
+          <div className={styles.newsInfoDate}><i>{props.date}</i></div>
+          <div className={styles.newsInfoText}>{props.text}</div>
         </div>
       </a>
     </div>

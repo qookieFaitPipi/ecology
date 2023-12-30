@@ -4,15 +4,19 @@
   margin-top: 15px;
   border-top: 1px #ebebeb solid;
 
-  .newsTitle {
+  .title {
     text-align: center;
     font-size: $sizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 25px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   
-  .newsContent {
+  .container {
     max-width: 1300px;
     margin: 0 auto;
   }

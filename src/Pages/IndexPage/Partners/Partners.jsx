@@ -25,7 +25,7 @@ const Partners = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -35,35 +35,35 @@ const Partners = () => {
 
   return (
     <div className={styles.partners}>
-      <div className={styles.partnersTitle} id='scrollPartners'>Наши заказчики и партнёры</div>
-      <Carousel responsive={responsive} className={styles.partnersCarousel} id='scrollPartners'>
+      <div className={styles.title} id='scrollPartners'>Наши заказчики и партнёры</div>
+      <Carousel responsive={responsive} className={styles.carousel} id='scrollPartners'>
       
-      <div className={styles.partnersCarouselItem}>
+      <div className={styles.item}>
         <img width="250px" src={pt6} alt="ООО «ТрансКомИнжиниринг»" />
       </div>
 
-      <div className={styles.partnersCarouselItem}>
+      <div className={styles.item}>
         <img width="300px" style={{marginBottom: '20px'}} src={pt3} alt="ООО «БАЛТМОР-проект»" />
       </div>
 
-      <div className={styles.partnersCarouselItem}>
-        <img className={styles.partnersItemImage} width="300px" style={{marginBottom: '50px'}}  src={pt1} alt="ОАО «Ультрамар»" />
+      <div className={styles.item}>
+        <img width="300px" style={{marginBottom: '50px'}}  src={pt1} alt="ОАО «Ультрамар»" />
       </div>
 
-      <div className={styles.partnersCarouselItem} style={{fontSize: '30px'}}>
+      <div className={styles.item} style={{fontSize: '30px'}}>
         <i style={{marginBottom: '15px'}}>ООО «ТЭС И»</i>
       </div>
 
-      <div className={styles.partnersCarouselItem}>
+      <div className={styles.item}>
         <img width="300px" style={{marginBottom: '10px'}} src={pt2} alt="ОАО «Хотьковский автомост»" />
       </div>
 
-      <div className={styles.partnersCarouselItem}>
+      <div className={styles.item}>
         <img width="150px" src={pt5} alt="ООО «ПСК «СИТИ-Инжиниринг»" />
-        <div className={styles.partnersCarouselItemText}>ООО «ПСК «СИТИ-Инжиниринг»</div>
+        <div className={styles.text}>ООО «ПСК «СИТИ-Инжиниринг»</div>
       </div>
 
-      <div className={styles.partnersCarouselItem}>
+      <div className={styles.item}>
         <img width="150px"  src={pt4} alt="ООО «МТ групп»" />
       </div>
       </Carousel>

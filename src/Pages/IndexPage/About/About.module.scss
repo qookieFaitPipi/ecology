@@ -4,24 +4,35 @@
   margin-top: 15px;
   border-top: 1px #ebebeb solid;
 
-  .aboutTitle {
+  .title {
     text-align: center;
     font-size: $sizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
-  .aboutContent {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .aboutText {
+    .text {
       font-size: sizeText;
       text-align: justify;
       max-width: 1200px;
       color: #000;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        max-width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
     }
   }
 }

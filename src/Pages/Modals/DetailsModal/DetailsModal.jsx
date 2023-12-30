@@ -20,15 +20,15 @@ const DetailsModal = () => {
         <div className={styles.detailsModalTextBlock}>
           <div className={styles.detailsModalText}>{topText}</div>
         </div>
-
+        
         <div className={styles.detailsModalPointsBlock}>
           {points.map((obj) => 
             <div style={{margin: '5px'}}>{obj}</div>
           )}
         </div>
 
-        <div className={styles.detailsModalTextBlock}>
-          <div className={styles.detailsModalText} style={{marginTop: '10px'}}>{bottomText}</div>
+        <div className={styles.detailsModalTextBlock} style={bottomText === '' ? {display: 'none'} : {display: 'block'}}>
+          <div className={styles.detailsModalText}>{bottomText}</div>
         </div>
       </div>
     </div>
