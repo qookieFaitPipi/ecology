@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './HiddenHeader.module.scss';
 
 const HiddenHeader = () => {
   return (
-    <div style={{height: '120px'}}>
+    <div className={styles.hiddenHeader}>
       
     </div>
   )

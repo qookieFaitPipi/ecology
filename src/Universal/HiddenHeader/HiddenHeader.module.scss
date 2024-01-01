@@ -1,0 +1,7 @@
+.hiddenHeader {
+  height: 115px;
+
+  @media (max-width: 767px) {
+    height: 130px;
+  }
+}

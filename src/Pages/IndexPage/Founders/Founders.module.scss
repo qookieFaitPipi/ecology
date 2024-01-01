@@ -7,15 +7,19 @@
   margin-top: 15px;
   border-top: 1px #ebebeb solid;
 
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+
   .title {
     text-align: center;
-    font-size: $sizeTitle;
+    font-size: $desktopSizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 25px;
 
     @media (max-width: 767px) {
-      font-size: 20px;
+      font-size: $mobileSizeTitle;
     }
   }
 
@@ -51,7 +55,7 @@
       }
 
       .link {
-        font-size: sizeText;
+        font-size: $desktopSizeText;
         margin-top: 25px;
         cursor: pointer;
         color: #44944A;
@@ -87,11 +91,11 @@
       }
 
       .text {
-        font-size: 18px;
+        font-size: $desktopSizeText;
         margin-top: 10px;
 
         @media (max-width: 767px) {
-          font-size: 14px;
+          font-size: $mobileSizeText;
         }
       }
     }

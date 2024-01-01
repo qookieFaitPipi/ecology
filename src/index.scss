@@ -17,13 +17,15 @@ html, body {
   max-width: 1400px;
 }
 
-// title
-// desktop
-$sizeTitle: 30px;
+// font
 $fontFamily: 'Helios';
-$sizeText: 20px;
-$sizeSupText: 16px;
+
+
+// desktop
+$desktopSizeTitle: 26px;
+$desktopSizeText: 16px;
+$desktopSizeSupText: 16px;
 
 // mobile
-// title: 20px
-// text: 14px
+$mobileSizeTitle: 24px;
+$mobileSizeText: 14px;

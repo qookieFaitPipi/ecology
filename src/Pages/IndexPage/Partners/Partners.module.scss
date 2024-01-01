@@ -6,10 +6,14 @@
   
   .title {
     text-align: center;
-    font-size: $sizeTitle;
+    font-size: $desktopSizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 15px;
+
+    @media (max-width: 767px) {
+      font-size: $mobileSizeTitle;
+    }
   }
   
   .carousel {

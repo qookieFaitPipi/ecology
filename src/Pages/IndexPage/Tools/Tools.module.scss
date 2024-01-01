@@ -6,13 +6,13 @@
 
   .title {
     text-align: center;
-    font-size: $sizeTitle;
+    font-size: $desktopSizeTitle;
     font-weight: 600;
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     @media (max-width: 767px) {
-      font-size: 20px;
+      font-size: $mobileSizeTitle;
     }
   }
 
@@ -23,14 +23,12 @@
     flex-direction: row;
 
     .item {
-      position: relative;
       display: flex;
       flex-direction: column;
-      margin: 0px 40px 40px 40px;
+      margin: 0px 20px 20px 20px;
       border: 1px #ccc solid;
       border-radius: 10px;
       width: 25%;
-      height: 100%;
 
       @media (max-width: 767px) {
         width: 80%;
@@ -49,12 +47,11 @@
       }
 
       .itemDescription {
-        margin-top: 10px;
-        font-size: sizeText;
+        font-size: $desktopSizeText;
         padding: 10px;
 
         @media (max-width: 767px) {
-          font-size: 14px;
+          font-size: $mobileSizeText;
         }
       }
 
@@ -62,18 +59,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 40px;
-        margin: 0 auto;
         border-radius: 0px 0px 10px 10px;
         color: #000;
         height: 40px;
         border-top: 1px #ccc solid;
         cursor: pointer;
-
+        margin-top: auto;
 
         @media (max-width: 767px) {
           font-size: 14px;
@@ -87,7 +78,7 @@
     }
 
     .item:last-child {
-      margin: 0px 40px 0px 40px;
+      margin: 0px 20px 20px 20px;
     }
   }
 }

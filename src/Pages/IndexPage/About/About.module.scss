@@ -6,13 +6,13 @@
 
   .title {
     text-align: center;
-    font-size: $sizeTitle;
+    font-size: $desktopSizeTitle;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 15px;
 
     @media (max-width: 767px) {
-      font-size: 20px;
+      font-size: $mobileSizeTitle;
     }
   }
 
@@ -22,14 +22,21 @@
     align-items: center;
 
     .text {
-      font-size: sizeText;
+      font-size: $desktopSizeText;
       text-align: justify;
       max-width: 1200px;
       color: #000;
+      margin-bottom: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
 
       @media (max-width: 767px) {
-        font-size: 14px;
-        max-width: auto;
+        font-size: $mobileSizeText;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      @media (max-width: 1024px) {
         margin-left: 20px;
         margin-right: 20px;
       }
