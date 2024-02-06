@@ -11,9 +11,9 @@ const Footer = () => {
         <div className={styles.mainBlock}>
           <div className={styles.contacts}>
             <div className={styles.title} id='scrollFooter'>Контакты</div>
-            <div className={styles.text}><b>Адрес:</b> 196084, Россия, Санкт-Петербург, <br /> Малая Митрофаньевская улица, д.4, литер Л, офис 315</div>
-            <div className={styles.text}><b>Телефон:</b> +7 (812) 948-55-99</div>
-            <div className={styles.text}><b>Email:</b> info@eci.su</div>
+            <div className={styles.text}>Адрес: 196084, Россия, Санкт-Петербург, <br /> Малая Митрофаньевская улица, д.4, литер Л, офис 315</div>
+            <div className={styles.text}>Телефон: +7 (812) 948-55-99</div>
+            <div className={styles.text}>Email: info@eci.su</div>
           </div>
           <div className={styles.contacts}>
             <div className={styles.title}>СОУТ</div>
@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bottomBlock}>
-          AO «ЭСП» 2023 Все права защищены
+          AO «ЭСП» 2024 Все права защищены
         </div>
       </div>
     </div>
